@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+#flex-card{
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px 30px;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 1em;
+}
+.card{
+    flex: min(100%, 250px) 0 0;
+    padding: 10px;
+    background-color: #D04A59;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+.card-header{
+    color: aliceblue;
+    font-size: clamp(2rem, 4vw, 2.4rem);
+    line-height: 1;
+    text-align: center;
+}
+.card-desc{
+    color: aliceblue;
+    font-size: clamp(1.4rem, 0.5vw+1.2rem, 1.6rem);
+    line-height: 1.5;
+    letter-spacing: 0.02cm;
+    flex-grow: 1;
+    text-align: center;
+}
+.card-btn{
+    padding: 0.5em;
+    background-color: aliceblue;
+    color: #D04A59;
+    outline: none; 
+    border: none;
+}
